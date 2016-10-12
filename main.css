@@ -1,0 +1,112 @@
+/* BASE
+============================================================================= */
+@import url(http://fonts.googleapis.com/css?family=Offside);
+
+html                            { overflow-y:scroll; }
+body                            { margin-top:40px; background-image: url("images/cracked_wood.jpg"); background-size: 100% 100%;}
+
+/* HEADER
+============================================================================= */
+#header                         { margin-bottom:50px; }
+
+    /* logo */
+    #logo                       { color:#FFF; font-family:'Offside'; font-size:80px; margin-bottom:50px; margin-top:50px; }
+    #logo span                  { display:inline-block; }
+
+/* MAIN NAV
+============================================================================= */
+#main-nav                       { margin-bottom:30px; }
+
+/* SIDEBAR
+============================================================================= */
+#sidebar                        {  }
+
+#sidebar-nav                    {  }
+#sidebar-nav ul                 { list-style:none; padding-left:0; }
+#sidebar-nav li                 {  }
+#sidebar-nav a                  { background:#428bca; color:#FFF; display:block; margin-bottom:10px; padding:20px; text-transform:uppercase;
+    border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px;
+}
+    #sidebar-nav a:hover        { background:#3276b1; text-decoration:none; }
+
+/* CONTENT
+============================================================================= */
+#content                        {  min-height:400px; padding:20px;
+    border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; opacity:0.9;
+}
+#content img                    { border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
+
+/* ANIMATIONS
+============================================================================= */
+
+    /* logo */
+    .aA                         { animation-delay:0.2s; -moz-animation-delay:0.2s; -webkit-animation-delay:0.2s; }
+    .al                         { animation-delay:0.8s; -moz-animation-delay:0.8s; -webkit-animation-delay:0.8s; }
+    .ap                         { animation-delay:0.6s; -moz-animation-delay:0.6s; -webkit-animation-delay:0.6s; }
+    .ai                         { animation-delay:1s; -moz-animation-delay:1s; -webkit-animation-delay:1s; }
+    .an                         { animation-delay:0.4s; -moz-animation-delay:0.4s; -webkit-animation-delay:0.4s; }
+    .ae                         { animation-delay:1.2s; -moz-animation-delay:1.2s; -webkit-animation-delay:1.2s; }
+
+    .mM                         { animation-delay:1.4s; -moz-animation-delay:1.4s; -webkit-animation-delay:1.4s; }
+    .mi                         { animation-delay:0.4s; -moz-animation-delay:0.4s; -webkit-animation-delay:0.4s; }
+    .mc                         { animation-delay:0.6s; -moz-animation-delay:0.6s; -webkit-animation-delay:0.6s; }
+    .mr                         { animation-delay:0.5s; -moz-animation-delay:0.5s; -webkit-animation-delay:0.5s; }
+    .mo                         { animation-delay:0.5s; -moz-animation-delay:0.5s; -webkit-animation-delay:0.3s; }
+    .mb                         { animation-delay:0.5s; -moz-animation-delay:0.5s; -webkit-animation-delay:0.9s; }
+    .me                         { animation-delay:0.5s; -moz-animation-delay:0.5s; -webkit-animation-delay:0.7s; }
+
+    /* sidebar */
+    #side-doom                  { animation-delay:0.4s; -moz-animation-delay:0.4s; -webkit-animation-delay:0.4s; }
+    #side-flyingPunch                  { animation-delay:0.2s; -moz-animation-delay:0.2s; -webkit-animation-delay:0.2s; }
+    #side-angelPush                 { animation-delay:0.6s; -moz-animation-delay:0.6s; -webkit-animation-delay:0.6s; }
+    #side-soundcloud                  { animation-delay:0.8s; -moz-animation-delay:0.8s; -webkit-animation-delay:0.8s; }
+    #side-contact               { color: #337ab7; animation-delay:0.3s; -moz-animation-delay:0.3s; -webkit-animation-delay:0.3s; }
+
+    /* content */
+    #content                    { animation-delay:1.5s; -moz-animation-delay:1.5s; -webkit-animation-delay:1.5s; }
+        #content img            { animation-delay:1.7s; -moz-animation-delay:1.7s; -webkit-animation-delay:1.7s; }
+
+
+/* FLIP CARD EFFECT
+============================================================================= */
+
+.flip {
+  -webkit-perspective: 800;
+perspective: 800;
+
+    position: relative;
+ text-align: center;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+.flip .card {
+
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.flip .card .face {
+
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+  z-index: 2;
+   
+}
+.flip .card .front {
+  position: absolute;
+   width: 100%;
+  z-index: 1;
+
+}
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+  .inner{margin:0px !important;}
+
+.well{background-color: #337ab7; color:white; text-align: left; font-size: 1.4em;}
+
